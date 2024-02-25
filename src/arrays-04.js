@@ -18,6 +18,7 @@
  */
 function getAbsoluteSum(nums) {
   // write your code here & return value
+  return nums.reduce((acc, num) => acc + Math.abs(num), 0);
 }
 
 /**
@@ -29,6 +30,7 @@ function getAbsoluteSum(nums) {
  */
 function removeStrings(arr) {
   // write your code here & return value
+  return arr.filter((element) => typeof element !== 'string');
 }
 
 /**
@@ -51,6 +53,7 @@ function removeStrings(arr) {
  */
 function findMinMax(arr) {
   // write your code here & return value
+  return [Math.min(...arr), Math.max(...arr)];
 }
 
 /**
@@ -75,6 +78,11 @@ function findMinMax(arr) {
  */
 function getTelNo(numbers) {
   // write your code here & return value
+  const copy = [...numbers];
+  copy.splice(0, 0, '(');
+  copy.splice(4, 0, ') ');
+  copy.splice(8, 0, '-');
+  return copy.join('');
 }
 
 module.exports = {

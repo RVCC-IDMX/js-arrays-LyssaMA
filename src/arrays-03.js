@@ -18,6 +18,11 @@
  */
 function addUpArrayElements(arr) {
   // write your code here & return value
+  let sum = 0;
+  arr.forEach((num) => {
+    sum += num;
+  });
+  return sum;
 }
 
 /**
@@ -29,6 +34,7 @@ function addUpArrayElements(arr) {
  */
 function makeSquareNumbers(arr) {
   // write your code here & return value
+  return arr.map((num) => num * num);
 }
 
 /**
@@ -43,6 +49,7 @@ function makeSquareNumbers(arr) {
  */
 function filterForLargeWords(arr, length) {
   // write your code here & return value
+  return arr.filter((word) => word.length > length);
 }
 
 /**
@@ -54,6 +61,7 @@ function filterForLargeWords(arr, length) {
  */
 function findTheFirstEvenNumber(arr) {
   // write your code here & return value
+  return arr.find((num) => num % 2 === 0);
 }
 
 /**
@@ -66,6 +74,9 @@ function findTheFirstEvenNumber(arr) {
  */
 function sortCaseSensitive(arr) {
   // write your code here & return value
+  const newArr = [...arr];
+  newArr.sort();
+  return newArr;
 }
 
 /**
@@ -79,6 +90,7 @@ function sortCaseSensitive(arr) {
  */
 function makeTheString(arr, separator) {
   // write your code here & return value
+  return arr.join(separator);
 }
 
 /**
@@ -90,6 +102,8 @@ function makeTheString(arr, separator) {
  */
 function reverseTheArray(arr) {
   // write your code here & return value
+  const newArr = [...arr];
+  return newArr.reverse();
 }
 
 /**
@@ -101,6 +115,9 @@ function reverseTheArray(arr) {
  */
 function makeMirrorArray(arr) {
   // write your code here & return value
+  const newArr = [...arr];
+  const el = newArr.pop();
+  return newArr.concat(el, [...newArr].reverse());
 }
 
 /**
@@ -114,6 +131,7 @@ function makeMirrorArray(arr) {
  */
 function dropRight(arr, n) {
   // write your code here & return value
+  return arr.slice(0, -n);
 }
 
 /**
@@ -127,6 +145,7 @@ function dropRight(arr, n) {
  */
 function dropLeft(arr, n) {
   // write your code here & return value
+  return arr.slice(n);
 }
 
 /**
@@ -140,6 +159,7 @@ function dropLeft(arr, n) {
  */
 function checkArrayForValue(arr, val) {
   // write your code here & return value
+  return arr.includes(val);
 }
 
 module.exports = {

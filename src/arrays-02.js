@@ -40,6 +40,7 @@
  */
 function findTheCharacterAtIndex(str, indx) {
   // write your code here & return value
+  return str[indx];
 }
 
 /**
@@ -51,6 +52,7 @@ function findTheCharacterAtIndex(str, indx) {
  */
 function sliceTheString(str, start, end) {
   // write your code here & return value
+  return str.slice(start, end);
 }
 
 /**
@@ -61,6 +63,7 @@ function sliceTheString(str, start, end) {
  */
 function splitTheString(str, separator) {
   // write your code here & return value
+  return str.split(separator);
 }
 
 /**
@@ -70,6 +73,7 @@ function splitTheString(str, separator) {
  */
 function makeAllUpperCase(str) {
   // write your code here & return value
+  return str.toUpperCase();
 }
 
 /**
@@ -79,6 +83,7 @@ function makeAllUpperCase(str) {
  */
 function makeAllLowerCase(str) {
   // write your code here & return value
+  return str.toLowerCase();
 }
 
 /**
@@ -91,6 +96,7 @@ function makeAllLowerCase(str) {
  */
 function makeWordTitleCase(word) {
   // write your code here & return value
+  return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
 }
 
 /**
@@ -103,6 +109,7 @@ function makeWordTitleCase(word) {
  */
 function replaceTheString(str, oldStr, newStr) {
   // write your code here & return value
+  return str.replace(oldStr, newStr);
 }
 
 /**
@@ -115,6 +122,7 @@ function replaceTheString(str, oldStr, newStr) {
  */
 function makeSentenceTitleCase(sentence) {
   // write your code here & return value
+  return sentence.split(' ').map(makeWordTitleCase).join(' ');
 }
 
 module.exports = {
