@@ -24,7 +24,6 @@
  * ? example: [1, 2, 3, 4, 5] => 1
  */
 function getFirstValue(arr) {
-  // write your code here & return value
   return arr[0];
 }
 
@@ -37,7 +36,6 @@ function getFirstValue(arr) {
  * @returns {array} - array of the 4 elements
  */
 function makeArray(a, b, c, d) {
-  // write your code here & return value
   return [a, b, c, d];
 }
 
@@ -49,7 +47,6 @@ function makeArray(a, b, c, d) {
  *return [2,3,5,7,11]
  */
 function createFirstFivePrimes() {
-  // write your code here & return value
   return [2, 3, 5, 7, 11];
 }
 /**
@@ -61,7 +58,6 @@ function createFirstFivePrimes() {
    * ? must use a for loop
    */
 function createSizedArray(size) {
-  // write your code here & return value
   const arr = [];
   for (let i = 0; i < size; i += 1) {
     arr.push(i);
@@ -76,7 +72,6 @@ function createSizedArray(size) {
    * @returns modified array
    */
 function modifyArrayByAdding(arr) {
-  // write your code here & return value
   arr.push(1);
   arr.unshift(1);
   return arr;
@@ -89,7 +84,6 @@ function modifyArrayByAdding(arr) {
    * ? example: [1, 2, 3, 4, 5] => [2, 3, 4]
    */
 function modifyArrayByDeleting(arr) {
-  // write your code here & return value
   arr.shift();
   arr.pop();
   return arr;
@@ -103,7 +97,6 @@ function modifyArrayByDeleting(arr) {
    * ? example: [1, 2, 3, 4, 5], index = 2 => 3
    */
 function findElementAtIndex(arr, index) {
-  // write your code here & return value
   return arr[index];
 }
 
@@ -116,7 +109,6 @@ function findElementAtIndex(arr, index) {
    * ? hint: https://bit.ly/4bL1MxZ - Array Searching and Sorting Methods
    */
 function findElementByValue(arr, value) {
-  // write your code here & return value
   return arr.indexOf(value);
 }
 
@@ -129,7 +121,6 @@ function findElementByValue(arr, value) {
    * ? example: [1, 2, 3, 4, 5], index = 2, value = 0 => [1, 2, 0, 4, 5]
    */
 function changeElementAtIndex(arr, index, value) {
-  // write your code here & return value
   arr[index] = value;
   return arr;
 }
@@ -142,7 +133,6 @@ function changeElementAtIndex(arr, index, value) {
    * ? https://mzl.la/3ib7Dm3
    */
 function makeStringFromArray(arr) {
-  // write your code here & return value
   return arr.join('');
 }
 
@@ -154,7 +144,6 @@ function makeStringFromArray(arr) {
    * ? https://mzl.la/4bKFQ68- The spread operator
    */
 function createShallowCopy(arr) {
-  // write your code here & return value
   return [...arr];
 }
 
